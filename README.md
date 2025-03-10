@@ -206,3 +206,14 @@ Classes trabalhando lado a lado, cada uma cumprindo seu papel específico, sem d
 No desenvolvimento orientado a objetos, devemos sempre buscar baixo acoplamento e alta coesão. Isso melhora a manutenibilidade, reutilização e escalabilidade do código.
 
 Agora que entendemos esses princípios fundamentais, vamos explorar em detalhes cada um dos pilares da OOP! 
+
+## Estado e comportamento 
+
+Agora vamos aprofundar ainda mais os conceitos da Programação Orientada a Objetos (OOP). A partir deste ponto, utilizaremos um modelo prático, um projeto especialmente desenvolvido para demonstrar exemplos reais de cada conceito abordado. 
+
+Para acompanhar e praticar os exemplos, você pode fazer o download do projeto diretamente no meu repositório do GitHub: 
+
+Repositório no GitHub: 
+https://github.com/jeffreysSharp/fundamentos-arquitetura-software 
+ 
+Através desse projeto, iremos explorar os fundamentos da OOP na prática, garantindo um aprendizado mais dinâmico e aplicável ao mercado de trabalho. 
