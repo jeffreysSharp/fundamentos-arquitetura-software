@@ -149,7 +149,60 @@ Abaixo estão suas principais responsabilidades:
 O Arquiteto de Software tem um papel estratégico e técnico, garantindo que o sistema seja escalável, seguro, performático e bem estruturado. Ele não é apenas um desenvolvedor experiente, mas sim um profissional que toma decisões de alto nível, guiando a equipe para construir softwares robustos e alinhados aos objetivos da empresa. 
 
 
+## Pilares da Programação Orientada a Objetos (OOP)
+Neste módulo, exploraremos a Programação Orientada a Objetos (OOP), um conceito fundamental na engenharia de software. Você provavelmente já teve contato com OOP na faculdade, em cursos de programação ou até mesmo por conta própria, e pode considerá-la um conceito simples.
 
-  
- 
+No entanto, aqui iremos aprofundar o estudo com seriedade, analisando suas bases, aplicações práticas e melhores práticas, garantindo uma compreensão sólida e avançada da Programação Orientada a Objetos.
 
+### A Origem da Programação Orientada a Objetos
+O termo Programação Orientada a Objetos (POO) foi criado por Alan Kay, o mesmo criador da linguagem Smalltalk. Embora esse paradigma tenha sido desenvolvido anteriormente, sua popularização ocorreu principalmente na década de 1990, consolidando-se como um dos modelos mais utilizados no desenvolvimento de software.
+
+A POO é um paradigma essencial no desenvolvimento de software moderno. Ela permite organizar o código de forma intuitiva, reutilizável e escalável. No C#, a POO é amplamente utilizada para desenvolver aplicações robustas e modulares.
+
+### Os Pilares Fundamentais da Programação Orientada a Objetos
+Os pilares fundamentais da Programação Orientada a Objetos são:
+- Estado e comportamento (definição dos atributos e métodos dos objetos).
+- Abstração (ocultar detalhes internos e expor apenas o essencial).
+- Herança (compartilhamento de características entre classes).
+- Polimorfismo (capacidade de um método ter diferentes implementações).
+- Encapsulamento (restringir o acesso direto aos dados internos de um objeto).
+
+### A Importância da OOP no Mercado
+- Dominar os princípios da Orientação a Objetos é essencial para:
+- Aplicar boas práticas de design de código e padrões arquiteturais.
+- Trabalhar com .NET, Java e outros frameworks populares.
+- Ter um diferencial competitivo no mercado de trabalho.
+- Passar por entrevistas técnicas e explicar conceitos com exemplos claros.
+- Implementar design patterns e estilos arquiteturais corretamente.
+
+Embora existam outras abordagens, como a programação funcional, a maioria das empresas ainda utiliza OOP em grande escala. Se você deseja ter oportunidades no mercado, é essencial dominar esses conceitos.
+
+### Baixo Acoplamento e Alta Coesão: Conceitos Essenciais
+Dois conceitos fundamentais na OOP são baixo acoplamento e alta coesão. Muitas pessoas mencionam esses termos sem realmente entendê-los, então vamos esclarecer.
+
+### O Que é Acoplamento?
+O acoplamento refere-se ao grau de dependência entre objetos. Se um objeto depende diretamente de outro, qualquer alteração pode impactar ambos, gerando fragilidade no código.
+
+### Exemplo de alto acoplamento:**
+Quando uma classe instancia diretamente outra classe dentro dela, ou quando a herança é mal utilizada, causando forte dependência entre os objetos.
+
+➡ Se um objeto muda, o outro também é impactado.
+
+### O Que é Coesão?
+A coesão representa o grau de responsabilidade única de um objeto. Um sistema com alta coesão possui módulos independentes, cada um executando uma única responsabilidade sem depender fortemente de outros.
+
+### Exemplo de alta coesão:
+Classes trabalhando lado a lado, cada uma cumprindo seu papel específico, sem dependências desnecessárias.
+
+## Se um objeto muda, os outros continuam funcionando normalmente.
+
+### Acoplamento vs. Coesão
+| Conceito     | Definição                                      | Impacto no Código                                                 |
+|--------------|------------------------------------------------|-------------------------------------------------------------------|
+| Acoplamento  | Dependência direta entre objetos               | Torna o código rígido e frágil, dificultando a manutenção.        |
+| Coesão       | Cada objeto executa uma única responsabilidade | Facilita a manutenção e reuso, tornando o código mais organizado. |
+
+### Aplicando na Prática
+No desenvolvimento orientado a objetos, devemos sempre buscar baixo acoplamento e alta coesão. Isso melhora a manutenibilidade, reutilização e escalabilidade do código.
+
+Agora que entendemos esses princípios fundamentais, vamos explorar em detalhes cada um dos pilares da OOP! 
