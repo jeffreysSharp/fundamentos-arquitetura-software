@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35806.99 d17.13
+VisualStudioVersion = 17.13.35806.99
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - OOP", "01 - OOP", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -13,20 +13,24 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04 - Clean Code", "04 - Cle
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05 - Design Patters", "05 - Design Patters", "{F44EED93-DF3E-46A4-94F8-DC66C0058831}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - ClassVsObjects", "01 - ClassVsObjects", "{6B00799A-FCF8-410D-84FF-81BB7A625455}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02 - Pillars", "02 - Pillars", "{E3A86BDE-647A-439E-BBDE-5EC5EEB5D890}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03 - Inheritance vs Composition", "03 - Inheritance vs Composition", "{6AA9814E-C078-4EDC-B7D5-0BB15E8EC88E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fundamentals.Architecture.OOP", "src\Fundamentals.Architecture.OOP\Fundamentals.Architecture.OOP.csproj", "{D3C74C20-EF19-4766-86C8-497DFF46E51C}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3C74C20-EF19-4766-86C8-497DFF46E51C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3C74C20-EF19-4766-86C8-497DFF46E51C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3C74C20-EF19-4766-86C8-497DFF46E51C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3C74C20-EF19-4766-86C8-497DFF46E51C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{6B00799A-FCF8-410D-84FF-81BB7A625455} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{E3A86BDE-647A-439E-BBDE-5EC5EEB5D890} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
-		{6AA9814E-C078-4EDC-B7D5-0BB15E8EC88E} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{D3C74C20-EF19-4766-86C8-497DFF46E51C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2DB8AC07-163E-4DC7-93FE-2BF1BC8D50D9}

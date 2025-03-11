@@ -1,8 +1,6 @@
 # Fundamentos da Arquitetura de Software .NET 9 | C# 13
 ## Olá, seja bem-vindo ao curso de Arquitetura de Software!
 
-### Olá, seja bem-vindo ao curso de Arquitetura de Software! 
-
 Eu sou Jeferson Almeida, profissional com 22 anos de experiência no desenvolvimento de sistemas dinâmicos e interativos para a web, com forte expertise em usabilidade, arquitetura da informação e engenharia de software. Minha especialização está na análise e desenvolvimento de sistemas de larga escala e baixa latência, sempre focando em soluções eficientes, escaláveis e de alto desempenho. 
 
 Serei o seu instrutor neste curso, que representa o primeiro passo na jornada para se tornar um Arquiteto de Software. Ao longo das aulas, abordaremos todos os fundamentos essenciais que um desenvolvedor precisa dominar para aprimorar suas habilidades e evoluir para um nível técnico mais avançado. 
