@@ -186,7 +186,7 @@ O acoplamento refere-se ao grau de dependência entre objetos. Se um objeto depe
 ### Exemplo de alto acoplamento:**
 Quando uma classe instancia diretamente outra classe dentro dela, ou quando a herança é mal utilizada, causando forte dependência entre os objetos.
 
-➡ Se um objeto muda, o outro também é impactado.
+**Se um objeto muda, o outro também é impactado.**
 
 ### O Que é Coesão?
 A coesão representa o grau de responsabilidade única de um objeto. Um sistema com alta coesão possui módulos independentes, cada um executando uma única responsabilidade sem depender fortemente de outros.
@@ -217,3 +217,202 @@ Repositório no GitHub:
 https://github.com/jeffreysSharp/fundamentos-arquitetura-software 
  
 Através desse projeto, iremos explorar os fundamentos da OOP na prática, garantindo um aprendizado mais dinâmico e aplicável ao mercado de trabalho. 
+
+## Estrutura do projeto
+Este projeto segue a estrutura apresentada na imagem abaixo, proporcionando uma organização clara e modular para facilitar o entendimento e a implementação dos conceitos abordados. 
+
+![](.doc/img/1-estrutura-solucao.JPG)
+
+Com este projeto base, você poderá acompanhar os módulos, experimentar os conceitos na prática, realizar testes e explorar diferentes implementações.
+
+Neste módulo, você aprenderá dois conceitos fundamentais da Programação Orientada a Objetos: Classes e Objetos.
+
+## Definições de Classes
+A classe é um dos conceitos fundamentais da Programação Orientada a Objetos (OOP). Em C#, classes servem como modelos para criar objetos, encapsulando atributos (dados) e métodos (comportamentos).
+
+## O Que é uma Classe?
+Uma classe é uma estrutura de código que define um conjunto de propriedades (atributos) e comportamentos (métodos) de um objeto. Ela funciona como um molde para a criação de instâncias (objetos) que compartilham as mesmas características e funcionalidades.
+
+### Estrutura Básica de uma Classe
+```
+public class ClassName
+{
+    // Atributos (Propriedades)
+    public int Property1 { get; set; }
+    public string Property2 { get; set; }
+
+    // Construtor
+    public ClassName(int property1, string property2)
+    {
+        Property1 = property1;
+        Property2 = property2;
+    }
+
+    // Método
+    public void Method()
+    {
+        Console.WriteLine("Executando método!");
+    }
+}
+
+```
+
+### Características das Classes
+- Encapsulam atributos e comportamentos.
+- Possuem modificadores de acesso (public, private, protected, etc.).
+- Podem ter construtores para inicialização de objetos.
+- Podem herdar de outras classes (herança).
+- Podem implementar interfaces para definir contratos de comportamento.
+
+### Criando uma Classe House (Casa)                
+Vamos criar uma classe House, que representará uma casa com atributos (cor, número de quartos, tamanho) e métodos (abrir porta, fechar porta, exibir informações).
+
+```
+public class House
+{
+    // Atributos (Propriedades)
+    public string Color { get; set; }
+    public int NumberOfRooms { get; set; }
+    public double Size { get; set; } // Tamanho em metros quadrados
+
+    // Construtor
+    public House(string color, int numberOfRooms, double size)
+    {
+        Color = color;
+        NumberOfRooms = numberOfRooms;
+        Size = size;
+    }
+
+    // Métodos
+    public void OpenDoor()
+    {
+        Console.WriteLine("A porta foi aberta!");
+    }
+
+    public void CloseDoor()
+    {
+        Console.WriteLine("A porta foi fechada!");
+    }
+
+    public void DisplayInfo()
+    {
+        Console.WriteLine($"Casa de cor {Color}, com {NumberOfRooms} quartos e {Size}m².");
+    }
+}
+
+```
+
+### Criando e Utilizando um Objeto da Classe House
+Agora, vamos instanciar um objeto da classe House e chamar seus métodos.
+
+```
+
+class Program
+{
+    static void Main()
+    {
+        // Criando um objeto da classe House
+        House myHouse = new House("Azul", 3, 120.5);
+        
+        // Exibindo informações
+        myHouse.DisplayInfo();
+        
+        // Abrindo e fechando a porta
+        myHouse.OpenDoor();
+        myHouse.CloseDoor();
+    }
+}
+
+```
+
+**Saída Esperada:**
+
+```
+Casa de cor Azul, com 3 quartos e 120.5m².
+A porta foi aberta!
+A porta foi fechada!
+
+```
+
+### Construtores e Sobrecarga de Métodos
+Em C#, uma classe pode ter múltiplos construtores (sobrecarga) para permitir diferentes formas de inicialização.
+
+```
+
+public class House
+{
+    public string Color { get; set; }
+    public int NumberOfRooms { get; set; }
+    public double Size { get; set; }
+
+    // Construtor padrão
+    public House()
+    {
+        Color = "Branco";
+        NumberOfRooms = 2;
+        Size = 80;
+    }
+
+    // Construtor com parâmetros
+    public House(string color, int numberOfRooms, double size)
+    {
+        Color = color;
+        NumberOfRooms = numberOfRooms;
+        Size = size;
+    }
+}
+
+```
+
+Agora podemos criar uma casa com valores padrões ou definir atributos personalizados.
+
+```
+
+House house1 = new House();
+House house2 = new House("Vermelha", 4, 150);
+
+```
+
+Os modificadores de acesso controlam a visibilidade dos membros de uma classe. Os principais são:
+
+| Modificador | Descrição                                                                 |
+|-------------|---------------------------------------------------------------------------|
+| public      | Acesso permitido de qualquer lugar.                                       |
+| private     | Acesso permitido apenas dentro da classe.                                 |
+| protected   | Acesso permitido apenas na classe e subclasses.                           |
+| internal    | Acesso permitido apenas dentro do mesmo Assembly.                         |
+
+**Exemplo de private e public:**
+
+```
+public class House
+{
+    private bool isDoorOpen;
+    
+    public void OpenDoor()
+    {
+        isDoorOpen = true;
+        Console.WriteLine("Porta aberta!");
+    }
+}
+
+```
+
+### isDoorOpen é privado, ou seja, só pode ser acessado dentro da própria classe.
+
+## Conclusão
+Agora você conhece tudo sobre Classes em C#!
+- Entendeu o conceito e a estrutura de uma classe.
+- Viu um exemplo prático com a classe House.
+- Aprendeu sobre modificadores de acesso, construtores e métodos.
+
+As classes são a base da Programação Orientada a Objetos (OOP), e entender seu funcionamento é essencial para construir sistemas organizados, escaláveis e eficientes!
+
+
+
+
+
+
+
+
+
