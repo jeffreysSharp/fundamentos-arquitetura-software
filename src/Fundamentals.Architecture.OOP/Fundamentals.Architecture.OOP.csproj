@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="02 - Pillars\" />
     <Folder Include="03 - Inheritance vs Composition\" />
     <Folder Include="04 - Interface vs Implementation\" />
   </ItemGroup>
