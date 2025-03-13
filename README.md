@@ -406,6 +406,149 @@ Agora você conhece tudo sobre Classes em C#!
 
 As classes são a base da Programação Orientada a Objetos (OOP), e entender seu funcionamento é essencial para construir sistemas organizados, escaláveis e eficientes!
 
+## Herança
+A herança é um dos princípios fundamentais da Programação Orientada a Objetos (POO). Ela permite que uma classe (denominada classe derivada ou subclasse) herde atributos e comportamentos de outra classe (denominada classe base ou superclasse). No C#, a herança é usada para promover o reuso de código e criar hierarquias de classes mais organizadas. 
+
+Isso promove reutilização de código, facilita a manutenção e melhora a organização do sistema. 
+
+### Definição de Herança 
+No C#, a herança é implementada através do operador **:**<br />
+A classe derivada herda todos os membros públicos e protegidos da classe base, mas não os membros privados. 
+
+**Sintaxe Básica**<br />
+```
+// Classe base
+public class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+    
+    public void Introduce()
+    {
+        Console.WriteLine($"Meu nome é {Name} e eu tenho {Age} anos.");
+    }
+}
+
+// Classe derivada
+public class Employee : Person
+{
+    public string Position { get; set; }
+    public decimal Salary { get; set; }
+    
+    public void Work()
+    {
+        Console.WriteLine($"{Name} está trabalhando como {Position}.");
+    }
+}
+
+// Usage
+var employee = new Employee
+{
+    Name = "Jeferson Almeida",
+    Age = 43,
+    Position = "Desenvolvedor Full Stack",
+    Salary = 10000
+};
+
+employee.Introduce();
+employee.Work();
+
+```
+
+**Modificadores de Acesso na Herança**<br />
+Os modificadores de acesso controlam quais membros da classe base podem ser acessados pelas subclasses:
+
+- public → Acessível de qualquer lugar.
+- protected → Acessível apenas pela classe base e classes derivadas.
+- private → Não acessível pelas classes derivadas.
+- internal → Acessível apenas dentro do mesmo assembly.
+- protected internal → Acessível dentro do mesmo assembly ou por herança.
+
+**Exemplo de uso de protected:** <br />
+```
+public class BankAccount
+{
+    public string Owner { get; set; }
+    protected decimal Balance { get; set; }
+    
+    public void Deposit(decimal amount)
+    {
+        Balance += amount;
+    }
+}
+
+public class CheckingAccount : BankAccount
+{
+    public void ShowBalance()
+    {
+        Console.WriteLine($"Saldo atual: {Balance}"); // Permitido desde que o saldo esteja protegido
+    }
+}
+
+```
+
+### Herança e Construtores
+A classe base pode conter um construtor, e a classe derivada pode chamá-lo utilizando base(...).
+
+```
+
+public class Person
+{
+    public string Name { get; set; }
+    public int Age { get; set; }
+    
+    public Person(string name, int age)
+    {
+        Name = name;
+        Age = age;
+    }
+}
+
+public class Employee : Person
+{
+    public string Position { get; set; }
+    
+    public Employee(string name, int age, string position) : base(name, age)
+    {
+        Position = position;
+    }
+}
+
+```
+
+### Herança e Classes Abstratas
+As classes abstratas são utilizadas quando queremos definir uma estrutura base que não pode ser instanciada diretamente. Em C#, usamos abstract.
+
+```
+public abstract class Animal
+{
+    public abstract void MakeSound(); // Abstract method that must be implemented
+}
+
+public class Dog : Animal
+{
+    public override void MakeSound()
+    {
+        Console.WriteLine("Woof Woof!");
+    }
+}
+
+```
+
+### Vantagens da Herança
+✅ Reuso de código.<br />
+✅ Melhoria na organização das classes.<br />
+✅ Facilidade de manutenção.<br />
+✅ Permite a criação de estruturas hierárquicas flexíveis.<br />
+
+### Desvantagens da Herança
+⚠️ Pode introduzir acoplamento excessivo entre classes.<br />
+⚠️ Pode levar a estruturas complexas e difíceis de manter.<br />
+⚠️ Pode ser ineficiente em certos cenários onde composição seria mais adequada.<br />
+
+### Conclusão
+A herança é uma ferramenta poderosa na POO, mas deve ser usada com moderação. Em cenários complexos, muitas vezes a composição é preferível. No DDD, a herança é utilizada para criar abstrações como entidades base e agregações.
+
 
 
 
