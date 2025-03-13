@@ -2,7 +2,6 @@
 ///Herança
 using Fundamentals.Architecture.OOP.Pillars.Inheritance;
 
-
 var employee = new Employee
 {
     Name = "Jeferson Almeida",
