@@ -1,17 +1,23 @@
 ﻿/////////////////////////////////////////////////////
-///Herança
+
 using Fundamentals.Architecture.OOP.Pillars.Inheritance;
+///////////////////////////////////////////////////////
+///Herança
+/// 
+var checkingAccount = new CheckingAccount();
+checkingAccount.ShowBalance();
 
-var employee = new Employee
-{
-    Name = "Jeferson Almeida",
-    Age = 43,
-    Position = "Desenvolvedor Full Stack",
-    Salary = 10000,
-};
+/// Sintaxe básica
+//var employee = new Employee
+//{
+//    Name = "Jeferson Almeida",
+//    Age = 43,
+//    Position = "Desenvolvedor Full Stack",
+//    Salary = 10000,
+//};
 
-employee.Introduce();
-employee.Work();
+//employee.Introduce();
+//employee.Work();
 
 
 
@@ -27,6 +33,6 @@ employee.Work();
 //myHouse.DisplayInfo();
 
 
-//// Abrindo e fechando
+//// Abrindo e fechando a porta
 //myHouse.OpenDoor();
 //myHouse.CloseDoor();
