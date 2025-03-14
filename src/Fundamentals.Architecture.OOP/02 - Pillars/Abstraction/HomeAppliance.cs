@@ -13,5 +13,6 @@
 
         public abstract void TurnOn();
         public abstract void TurnOf();
+        public virtual void Test() => Console.WriteLine($" Testando o equipamento...");
     }
 }

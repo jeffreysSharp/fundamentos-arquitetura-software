@@ -240,3 +240,73 @@ fridge.TurnOn(); // Saída: Geladeira está ligada.
 
 Geladeira está ligada.  
 Geladeira está desligada.
+
+
+/////////////////////////////
+///Polimorfismo
+
+
+    public class CoffeeMaker : HomeAppliance
+    {
+        public CoffeeMaker(string name, int voltage) 
+            : base(name, voltage) { }
+
+        public CoffeeMaker() 
+            : base("Cafeteira", 220) { }
+
+
+        public override void TurnOn()
+        {
+            Console.WriteLine($"{Name} está ligada, verificando recipiente de água...");
+        }
+
+        public override void TurnOf()
+        {
+            Console.WriteLine($"{Name} está desligada, resfriando o aquecedor...");
+        }
+
+        private static void HeatWater() => Console.WriteLine($"Aquecendo a água...");
+        private static void GrindingGrains() => Console.WriteLine($"Moendo os grãos...");
+
+        public void PrepareCoffee()
+        {
+            HeatWater();
+            GrindingGrains();
+            Console.WriteLine("Café está pronto");
+        }
+    }
+
+    public abstract void TurnOn();
+    public abstract void TurnOff();
+
+public void Test()
+{
+    Console.WriteLine("Testando equipamento...");
+}
+
+public virtual void Test()
+{
+    Console.WriteLine("Testando equipamento...");
+}
+
+public override void Test()
+{
+    Console.WriteLine("Testando a cafeteira antes do uso...");
+}
+
+public override void TurnOn()
+{
+    if (WaterTankIsEmpty())
+    {
+        Console.WriteLine("Atenção: Reabasteça o reservatório de água!");
+    }
+    else
+    {
+        Console.WriteLine("Ligando a cafeteira...");
+    }
+}
+
+public override void TurnOff()
+{
+    Console.WriteLine("Desligando a cafeteira e resfriando o aquecedor...");
+}

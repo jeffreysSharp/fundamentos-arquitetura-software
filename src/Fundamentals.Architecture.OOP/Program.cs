@@ -3,6 +3,7 @@
 ///
 using Fundamentals.Architecture.OOP.Pillars.Polimorphism;
 var myCooffee = new CoffeeMaker();
+Console.WriteLine("=====================================");
 myCooffee.PrepareCoffee();
 
 
