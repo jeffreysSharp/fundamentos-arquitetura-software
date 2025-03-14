@@ -1,10 +1,19 @@
-﻿/////////////////////////////////////////////////////
-//Abstração 
-using Fundamentals.Architecture.OOP.Pillars.Abstraction;
+﻿///////////////////////////////////////////////////////
+///Polimorfismo
+///
+using Fundamentals.Architecture.OOP.Pillars.Polimorphism;
+var myCooffee = new CoffeeMaker();
+myCooffee.PrepareCoffee();
 
-Refrigerator fridge = new Refrigerator("Geladeira", 220);
-fridge.TurnOn();
-fridge.TurnOf();
+
+
+/////////////////////////////////////////////////////
+////Abstração 
+//using Fundamentals.Architecture.OOP.Pillars.Abstraction;
+
+//Refrigerator fridge = new Refrigerator("Geladeira", 220);
+//fridge.TurnOn();
+//fridge.TurnOf();
 
 
 ///////////////////////////////////////////////////////
