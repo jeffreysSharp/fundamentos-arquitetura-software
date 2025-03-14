@@ -1,11 +1,18 @@
 ﻿/////////////////////////////////////////////////////
+//Abstração 
+using Fundamentals.Architecture.OOP.Pillars.Abstraction;
 
-using Fundamentals.Architecture.OOP.Pillars.Inheritance;
+Refrigerator fridge = new Refrigerator("Geladeira", 220);
+fridge.TurnOn();
+fridge.TurnOf();
+
+
 ///////////////////////////////////////////////////////
+///using Fundamentals.Architecture.OOP.Pillars.Inheritance;
 ///Herança
 /// 
-var checkingAccount = new CheckingAccount();
-checkingAccount.ShowBalance();
+//var checkingAccount = new CheckingAccount();
+//checkingAccount.ShowBalance();
 
 /// Sintaxe básica
 //var employee = new Employee

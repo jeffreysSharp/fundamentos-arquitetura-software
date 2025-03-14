@@ -206,3 +206,37 @@ public class Dog : Animal
 }
 
 // Abstração 
+
+public abstract class HomeAppliance
+{
+    public string Name { get; }
+    public int Voltage { get; }
+
+    public HomeAppliance(string name, int voltage)
+    {
+        Name = name;
+        Voltage = voltage;
+    }
+
+    public abstract void TurnOn();
+    public abstract void TurnOff();
+}
+
+HomeAppliance appliance = new HomeAppliance("Geladeira", 220); // Erro: não pode ser instanciada
+
+
+public class Refrigerator : HomeAppliance
+{
+    public Refrigerator(string name, int voltage) : base(name, voltage) { }
+
+    public override void TurnOn() => Console.WriteLine($"{Name} está ligada.");
+    public override void TurnOff() => Console.WriteLine($"{Name} está desligada.");
+}
+
+
+Refrigerator fridge = new Refrigerator("Geladeira", 220);
+fridge.TurnOn(); // Saída: Geladeira está ligada.
+
+
+Geladeira está ligada.  
+Geladeira está desligada.

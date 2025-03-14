@@ -549,6 +549,85 @@ public class Dog : Animal
 ### Conclusão
 A herança é uma ferramenta poderosa na POO, mas deve ser usada com moderação. Em cenários complexos, muitas vezes a composição é preferível. No DDD, a herança é utilizada para criar abstrações como entidades base e agregações.
 
+## Abstração 
+Neste módulo, abordaremos abstração, um dos pilares fundamentais da Programação Orientada a Objetos (POO). A abstração está diretamente relacionada à herança, pois permite definir um conjunto de estado e comportamento que serve como base para diversas especializações. 
+
+### Entendendo a Abstração 
+
+A ideia central da abstração na POO é fornecer uma superclasse que possa ser reutilizada por várias classes especializadas. No exemplo abaixo, temos a classe HomeAppliance: 
+
+```
+
+public abstract class HomeAppliance
+{
+    public string Name { get; }
+    public int Voltage { get; }
+
+    public HomeAppliance(string name, int voltage)
+    {
+        Name = name;
+        Voltage = voltage;
+    }
+
+    public abstract void TurnOn();
+    public abstract void TurnOff();
+}
+
+```
+
+Ao modelar essa classe, já pensamos no propósito dela como superclasse para outras classes especializadas. No entanto, ao projetar a abstração, não forçamos um comportamento específico. Cada subclasse que herdar de HomeAppliance será responsável por implementar os métodos abstratos TurnOn() e TurnOff(), garantindo a especialização do comportamento.
+
+### Métodos e Classes Abstratas
+No código acima, declaramos os métodos TurnOn() e TurnOff() como abstratos, utilizando a palavra-chave abstract. Isso significa que:<br />
+
+✅ A classe base não implementa esses métodos, apenas os declara.<br />
+✅ As classes que herdarem de HomeAppliance devem fornecer suas próprias implementações.<br />
+✅ A assinatura do método (modificador de acesso, retorno e parâmetros) deve ser mantida pelas subclasses.<br />
+
+Isso garante que todas as subclasses de HomeAppliance terão os métodos TurnOn() e TurnOff(), mas com implementações específicas para cada tipo de eletrodoméstico.<br />
+
+### O Papel da Classe Abstrata
+Além dos métodos abstratos, a própria classe HomeAppliance é marcada como abstrata (abstract). Isso significa que:<br />
+
+🚫 Ela não pode ser instanciada diretamente.<br />
+✅ Só pode ser usada como base para outras classes.<br />
+
+Ou seja, o código abaixo não funcionaria:
+
+```
+HomeAppliance appliance = new HomeAppliance("Geladeira", 220); // Erro: não pode ser instanciada
+
+```
+
+**Já a seguinte implementação seria válida:**
+
+```
+
+public class Refrigerator : HomeAppliance
+{
+    public Refrigerator(string name, int voltage) : base(name, voltage) { }
+
+    public override void TurnOn() => Console.WriteLine($"{Name} está ligada.");
+    public override void TurnOff() => Console.WriteLine($"{Name} está desligada.");
+}
+
+```
+**Agora podemos instanciar um Refrigerator, garantindo que ele siga o modelo de HomeAppliance:**
+
+```
+Refrigerator fridge = new Refrigerator("Geladeira", 220);
+fridge.TurnOn(); // Saída: Geladeira está ligada.
+
+```
+
+Conclusão
+A abstração permite criar modelos genéricos que podem ser especializados por outras classes, tornando o código mais organizado, reutilizável e flexível. Se seu objetivo é criar uma arquitetura bem estruturada, a abstração, combinada com herança, polimorfismo e encapsulamento, é essencial para um código limpo e escalável.
+
+### Resumo:
+✅ Superclasse abstrata define comportamento comum para várias classes.<br />
+✅ Métodos abstratos forçam a implementação específica em subclasses.<br />
+✅ Classes abstratas não podem ser instanciadas diretamente.<br />
+✅ Abstração é a base para polimorfismo e encapsulamento.<br />
 
 
 
