@@ -246,9 +246,9 @@ public class House
 
 ```
 
-### isDoorOpen é privado, ou seja, só pode ser acessado dentro da própria classe.
+**isDoorOpen é privado, ou seja, só pode ser acessado dentro da própria classe.**
 
-## Conclusão
+### Conclusão
 Agora você conhece tudo sobre Classes em C#!
 - Entendeu o conceito e a estrutura de uma classe.
 - Viu um exemplo prático com a classe House.
@@ -262,7 +262,7 @@ A herança é um dos princípios fundamentais da Programação Orientada a Objet
 Isso promove reutilização de código, facilita a manutenção e melhora a organização do sistema. 
 
 ### Definição de Herança 
-No C#, a herança é implementada através do operador **:**<br />
+No C#, a herança é implementada através do operador dois-pontos (**:**) <br />
 A classe derivada herda todos os membros públicos e protegidos da classe base, mas não os membros privados. 
 
 **Sintaxe Básica**<br />
