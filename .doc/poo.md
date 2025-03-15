@@ -28,7 +28,7 @@ Embora existam outras abordagens, como a programação funcional, a maioria das 
 ### Baixo Acoplamento e Alta Coesão: Conceitos Essenciais
 Dois conceitos fundamentais na POO são baixo acoplamento e alta coesão. Muitas pessoas mencionam esses termos sem realmente entendê-los, então vamos esclarecer.
 
-### O Que é Acoplamento?
+### O que é Acoplamento?
 O acoplamento refere-se ao grau de dependência entre objetos. Se um objeto depende diretamente de outro, qualquer alteração pode impactar ambos, gerando fragilidade no código.
 
 ### Exemplo de alto acoplamento:
@@ -40,9 +40,9 @@ Quando uma classe instancia diretamente outra classe dentro dela, ou quando a he
 A coesão representa o grau de responsabilidade única de um objeto. Um sistema com alta coesão possui módulos independentes, cada um executando uma única responsabilidade sem depender fortemente de outros.
 
 ### Exemplo de alta coesão:
-Classes trabalhando lado a lado, cada uma cumprindo seu papel específico, sem dependências desnecessárias.
+Classes trabalhando lado a lado, cada uma cumprindo seu papel específico, sem dependências desnecessárias.<br />
 
-## Se um objeto muda, os outros continuam funcionando normalmente.
+**Se um objeto muda, os outros continuam funcionando normalmente.**
 
 ### Acoplamento vs. Coesão
 | Conceito     | Definição                                      | Impacto no Código                                                 |
@@ -73,12 +73,13 @@ Este projeto segue a estrutura apresentada na imagem abaixo, proporcionando uma 
 
 Com este projeto base, você poderá acompanhar os módulos, experimentar os conceitos na prática, realizar testes e explorar diferentes implementações.
 
+## Estado e comportamento
 Neste módulo, você aprenderá dois conceitos fundamentais da Programação Orientada a Objetos: Classes e Objetos.
 
-## Definições de Classes
+### Definições de Classes
 A classe é um dos conceitos fundamentais da Programação Orientada a Objetos (POO). Em C#, classes servem como modelos para criar objetos, encapsulando atributos (dados) e métodos (comportamentos).
 
-## O Que é uma Classe?
+### O Que é uma Classe?
 Uma classe é uma estrutura de código que define um conjunto de propriedades (atributos) e comportamentos (métodos) de um objeto. Ela funciona como um molde para a criação de instâncias (objetos) que compartilham as mesmas características e funcionalidades.
 
 ### Estrutura Básica de uma Classe
