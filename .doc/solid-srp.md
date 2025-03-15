@@ -60,4 +60,5 @@ Com o SRP em mente, devemos sempre questionar:
 <br/>
 <div style="display: flex; justify-content: space-between;">  
    <a href="solid.md">Voltar: Princípios SOLID</a><br />  
+   <a href="solid-ocp.md">Avançar: OCP - Open Closed Principle</a>  
 </div>
