@@ -9,12 +9,11 @@ O termo Programação Orientada a Objetos (POO) foi criado por Alan Kay, o mesmo
 A POO é um paradigma essencial no desenvolvimento de software moderno. Ela permite organizar o código de forma intuitiva, reutilizável e escalável. No C#, a POO é amplamente utilizada para desenvolver aplicações robustas e modulares.
 
 ### Os Pilares Fundamentais da Programação Orientada a Objetos
-Os pilares fundamentais da Programação Orientada a Objetos são:
-- Estado e comportamento (definição dos atributos e métodos dos objetos).
-- Abstração (ocultar detalhes internos e expor apenas o essencial).
-- Herança (compartilhamento de características entre classes).
-- Polimorfismo (capacidade de um método ter diferentes implementações).
-- Encapsulamento (restringir o acesso direto aos dados internos de um objeto).
+- **Estado e comportamento** (definição dos atributos e métodos dos objetos).
+- **Abstração** (ocultar detalhes internos e expor apenas o essencial).
+- **Herança** (compartilhamento de características entre classes).
+- **Polimorfismo** (capacidade de um método ter diferentes implementações).
+- **Encapsulamento** (restringir o acesso direto aos dados internos de um objeto).
 
 ### A Importância da POO no Mercado
 - Dominar os princípios da Orientação a Objetos é essencial para:
