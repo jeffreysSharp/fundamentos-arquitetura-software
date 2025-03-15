@@ -1,6 +1,10 @@
 ﻿///////////////////////////////////////////////////////
+using Fundamentals.Architecture.OOP.Pillars.Polimorphism;
+
 ///Encapsulamento
 ///
+var coffeeMaker = new CoffeeMaker();
+coffeeMaker.PrepareCoffee();
 
 
 
