@@ -1,14 +1,12 @@
 ## Pilares da Programação Orientada a Objetos (OOP)
-
-## Pilares da Programação Orientada a Objetos (OOP)
 Neste módulo, exploraremos a Programação Orientada a Objetos (OOP), um conceito fundamental na engenharia de software. Você provavelmente já teve contato com OOP na faculdade, em cursos de programação ou até mesmo por conta própria, e pode considerá-la um conceito simples.
 
 No entanto, aqui iremos aprofundar o estudo com seriedade, analisando suas bases, aplicações práticas e melhores práticas, garantindo uma compreensão sólida e avançada da Programação Orientada a Objetos.
 
 ### A Origem da Programação Orientada a Objetos
-O termo Programação Orientada a Objetos (POO) foi criado por Alan Kay, o mesmo criador da linguagem Smalltalk. Embora esse paradigma tenha sido desenvolvido anteriormente, sua popularização ocorreu principalmente na década de 1990, consolidando-se como um dos modelos mais utilizados no desenvolvimento de software.
+O termo Programação Orientada a Objetos (OOP) foi criado por Alan Kay, o mesmo criador da linguagem Smalltalk. Embora esse paradigma tenha sido desenvolvido anteriormente, sua popularização ocorreu principalmente na década de 1990, consolidando-se como um dos modelos mais utilizados no desenvolvimento de software.
 
-A POO é um paradigma essencial no desenvolvimento de software moderno. Ela permite organizar o código de forma intuitiva, reutilizável e escalável. No C#, a POO é amplamente utilizada para desenvolver aplicações robustas e modulares.
+A OOP é um paradigma essencial no desenvolvimento de software moderno. Ela permite organizar o código de forma intuitiva, reutilizável e escalável. No C#, a OOP é amplamente utilizada para desenvolver aplicações robustas e modulares.
 
 ### Os Pilares Fundamentais da Programação Orientada a Objetos
 Os pilares fundamentais da Programação Orientada a Objetos são:
@@ -260,7 +258,7 @@ Agora você conhece tudo sobre Classes em C#!
 As classes são a base da Programação Orientada a Objetos (OOP), e entender seu funcionamento é essencial para construir sistemas organizados, escaláveis e eficientes!
 
 ## Herança
-A herança é um dos princípios fundamentais da Programação Orientada a Objetos (POO). Ela permite que uma classe (denominada classe derivada ou subclasse) herde atributos e comportamentos de outra classe (denominada classe base ou superclasse). No C#, a herança é usada para promover o reuso de código e criar hierarquias de classes mais organizadas. 
+A herança é um dos princípios fundamentais da Programação Orientada a Objetos (OOP). Ela permite que uma classe (denominada classe derivada ou subclasse) herde atributos e comportamentos de outra classe (denominada classe base ou superclasse). No C#, a herança é usada para promover o reuso de código e criar hierarquias de classes mais organizadas. 
 
 Isso promove reutilização de código, facilita a manutenção e melhora a organização do sistema. 
 
@@ -400,14 +398,14 @@ public class Dog : Animal
 ⚠️ Pode ser ineficiente em certos cenários onde composição seria mais adequada.<br />
 
 ### Conclusão
-A herança é uma ferramenta poderosa na POO, mas deve ser usada com moderação. Em cenários complexos, muitas vezes a composição é preferível. No DDD, a herança é utilizada para criar abstrações como entidades base e agregações.
+A herança é uma ferramenta poderosa na OOP, mas deve ser usada com moderação. Em cenários complexos, muitas vezes a composição é preferível. No DDD, a herança é utilizada para criar abstrações como entidades base e agregações.
 
 ## Abstração 
-Neste módulo, abordaremos abstração, um dos pilares fundamentais da Programação Orientada a Objetos (POO). A abstração está diretamente relacionada à herança, pois permite definir um conjunto de estado e comportamento que serve como base para diversas especializações. 
+Neste módulo, abordaremos abstração, um dos pilares fundamentais da Programação Orientada a Objetos (OOP). A abstração está diretamente relacionada à herança, pois permite definir um conjunto de estado e comportamento que serve como base para diversas especializações. 
 
 ### Entendendo a Abstração 
 
-A ideia central da abstração na POO é fornecer uma superclasse que possa ser reutilizada por várias classes especializadas. No exemplo abaixo, temos a classe HomeAppliance: 
+A ideia central da abstração na OOP é fornecer uma superclasse que possa ser reutilizada por várias classes especializadas. No exemplo abaixo, temos a classe HomeAppliance: 
 
 ```
 
@@ -486,5 +484,5 @@ A abstração permite criar modelos genéricos que podem ser especializados por 
 <br/>
 <div style="display: flex; justify-content: space-between;">  
    <a href="../README.md">Voltar: O que é Arquitetura de Software</a><br />
-  <a href="poo.md">Avançar: Programação Orientada a Objetos - POO</a>
+  <a href="OOP.md">Avançar: Programação Orientada a Objetos - OOP</a>
 </div>

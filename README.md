@@ -14,7 +14,7 @@ Além disso, este curso é ideal para desenvolvedores que desejam aprimorar suas
 
 Ao final, você terá adquirido um conhecimento sólido que permitirá não apenas evoluir como desenvolvedor, mas também dar os primeiros passos rumo à Arquitetura de Software. 
 
-Todos os exemplos apresentados ao longo do curso foram desenvolvidos com **.NET Core 9.0 e C# 13**, garantindo que você aprenda com as tecnologias mais recentes do mercado. 
+Todos os exemplos apresentados ao longo do curso foram desenvolvidos com **.NET 9.0 e C# 13**, garantindo que você aprenda com as tecnologias mais recentes do mercado. 
 
 <br/>
 

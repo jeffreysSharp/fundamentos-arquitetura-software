@@ -25,8 +25,8 @@ A conceituação da Arquitetura é essencial para garantir que exista um entendi
 
 Além disso, como podemos formalizar essa definição e garantir governança arquitetural dentro de uma empresa? Imagine que você trabalha em uma grande multinacional e precisa definir uma governança de Arquitetura para que todas as filiais e equipes de TI sigam diretrizes unificadas, garantindo padrões mínimos e um pensamento compartilhado sobre Arquitetura. 
 
-Para isso, existem dois conceitos fundamentais que ajudam a estruturar a governança da Arquitetura de Software, sendo um deles o **The Open Group Architecture Framework (TOGAF). 
-**
+Para isso, existem dois conceitos fundamentais que ajudam a estruturar a governança da Arquitetura de Software, sendo um deles o 
+**The Open Group Architecture Framework (TOGAF).**
  
 
 ### O Que é o TOGAF? 
@@ -37,8 +37,8 @@ Mas atenção: TOGAF não é apenas um modelo de arquitetura em camadas ou um si
 
 Para você ter uma ideia, o manual do TOGAF tem cerca de 900 páginas e cobre diversos aspectos essenciais da Arquitetura Empresarial. 
 
-Uma analogia interessante: 
-Se o PMBOK é um guia para gestão de projetos, o TOGAF é o equivalente para Arquitetura Empresarial. 
+Uma analogia interessante: <br />
+Se o **PMBOK** é um guia para gestão de projetos, o **TOGAF** é o equivalente para Arquitetura Empresarial. 
 
  
 
@@ -69,7 +69,7 @@ No final das contas, o TOGAF é um framework poderoso, projetado para permitir q
 
 Se o seu objetivo é atuar como um Arquiteto de Software em empresas de grande porte, conhecer o TOGAF pode ser um diferencial significativo. 
 
-O outro framework relevante que posso apresentar é a própria ISO/IEC/IEEE 42010, que trata sobre Sistemas de Software, Engenharia de Software e descrição de Arquitetura. 
+O outro framework relevante que posso apresentar é a própria **ISO/IEC/IEEE 42010**, que trata sobre Sistemas de Software, Engenharia de Software e descrição de Arquitetura. 
 
 Embora seja um documento mais curto em comparação ao TOGAF, ele ainda assim aborda conceitos fundamentais sobre Engenharia de Software, descrição de Arquitetura e relacionamentos entre componentes e ambientes. 
 
