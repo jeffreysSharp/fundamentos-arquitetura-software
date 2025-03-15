@@ -1,10 +1,16 @@
 ﻿///////////////////////////////////////////////////////
+///Encapsulamento
+///
+
+
+
+///////////////////////////////////////////////////////
 ///Polimorfismo
 ///
-using Fundamentals.Architecture.OOP.Pillars.Polimorphism;
-var myCooffee = new CoffeeMaker();
-Console.WriteLine("=====================================");
-myCooffee.PrepareCoffee();
+//using Fundamentals.Architecture.OOP.Pillars.Polimorphism;
+//var myCooffee = new CoffeeMaker();
+//Console.WriteLine("=====================================");
+//myCooffee.PrepareCoffee();
 
 
 
