@@ -1,12 +1,12 @@
-## Pilares da Programação Orientada a Objetos (OOP)
-Neste módulo, exploraremos a Programação Orientada a Objetos (OOP), um conceito fundamental na engenharia de software. Você provavelmente já teve contato com OOP na faculdade, em cursos de programação ou até mesmo por conta própria, e pode considerá-la um conceito simples.
+## Pilares da Programação Orientada a Objetos (POO)
+Neste módulo, exploraremos a Programação Orientada a Objetos (POO), um conceito fundamental na engenharia de software. Você provavelmente já teve contato com POO na faculdade, em cursos de programação ou até mesmo por conta própria, e pode considerá-la um conceito simples.
 
 No entanto, aqui iremos aprofundar o estudo com seriedade, analisando suas bases, aplicações práticas e melhores práticas, garantindo uma compreensão sólida e avançada da Programação Orientada a Objetos.
 
 ### A Origem da Programação Orientada a Objetos
-O termo Programação Orientada a Objetos (OOP) foi criado por Alan Kay, o mesmo criador da linguagem Smalltalk. Embora esse paradigma tenha sido desenvolvido anteriormente, sua popularização ocorreu principalmente na década de 1990, consolidando-se como um dos modelos mais utilizados no desenvolvimento de software.
+O termo Programação Orientada a Objetos (POO) foi criado por Alan Kay, o mesmo criador da linguagem Smalltalk. Embora esse paradigma tenha sido desenvolvido anteriormente, sua popularização ocorreu principalmente na década de 1990, consolidando-se como um dos modelos mais utilizados no desenvolvimento de software.
 
-A OOP é um paradigma essencial no desenvolvimento de software moderno. Ela permite organizar o código de forma intuitiva, reutilizável e escalável. No C#, a OOP é amplamente utilizada para desenvolver aplicações robustas e modulares.
+A POO é um paradigma essencial no desenvolvimento de software moderno. Ela permite organizar o código de forma intuitiva, reutilizável e escalável. No C#, a POO é amplamente utilizada para desenvolver aplicações robustas e modulares.
 
 ### Os Pilares Fundamentais da Programação Orientada a Objetos
 Os pilares fundamentais da Programação Orientada a Objetos são:
@@ -16,7 +16,7 @@ Os pilares fundamentais da Programação Orientada a Objetos são:
 - Polimorfismo (capacidade de um método ter diferentes implementações).
 - Encapsulamento (restringir o acesso direto aos dados internos de um objeto).
 
-### A Importância da OOP no Mercado
+### A Importância da POO no Mercado
 - Dominar os princípios da Orientação a Objetos é essencial para:
 - Aplicar boas práticas de design de código e padrões arquiteturais.
 - Trabalhar com .NET, Java e outros frameworks populares.
@@ -24,10 +24,10 @@ Os pilares fundamentais da Programação Orientada a Objetos são:
 - Passar por entrevistas técnicas e explicar conceitos com exemplos claros.
 - Implementar design patterns e estilos arquiteturais corretamente.
 
-Embora existam outras abordagens, como a programação funcional, a maioria das empresas ainda utiliza OOP em grande escala. Se você deseja ter oportunidades no mercado, é essencial dominar esses conceitos.
+Embora existam outras abordagens, como a programação funcional, a maioria das empresas ainda utiliza POO em grande escala. Se você deseja ter oportunidades no mercado, é essencial dominar esses conceitos.
 
 ### Baixo Acoplamento e Alta Coesão: Conceitos Essenciais
-Dois conceitos fundamentais na OOP são baixo acoplamento e alta coesão. Muitas pessoas mencionam esses termos sem realmente entendê-los, então vamos esclarecer.
+Dois conceitos fundamentais na POO são baixo acoplamento e alta coesão. Muitas pessoas mencionam esses termos sem realmente entendê-los, então vamos esclarecer.
 
 ### O Que é Acoplamento?
 O acoplamento refere-se ao grau de dependência entre objetos. Se um objeto depende diretamente de outro, qualquer alteração pode impactar ambos, gerando fragilidade no código.
@@ -54,18 +54,18 @@ Classes trabalhando lado a lado, cada uma cumprindo seu papel específico, sem d
 ### Aplicando na Prática
 No desenvolvimento orientado a objetos, devemos sempre buscar baixo acoplamento e alta coesão. Isso melhora a manutenibilidade, reutilização e escalabilidade do código.
 
-Agora que entendemos esses princípios fundamentais, vamos explorar em detalhes cada um dos pilares da OOP! 
+Agora que entendemos esses princípios fundamentais, vamos explorar em detalhes cada um dos pilares da POO! 
 
 ## Estado e comportamento 
 
-Agora vamos aprofundar ainda mais os conceitos da Programação Orientada a Objetos (OOP). A partir deste ponto, utilizaremos um modelo prático, um projeto especialmente desenvolvido para demonstrar exemplos reais de cada conceito abordado. 
+Agora vamos aprofundar ainda mais os conceitos da Programação Orientada a Objetos (POO). A partir deste ponto, utilizaremos um modelo prático, um projeto especialmente desenvolvido para demonstrar exemplos reais de cada conceito abordado. 
 
 Para acompanhar e praticar os exemplos, você pode fazer o download do projeto diretamente no meu repositório do GitHub: 
 
 Repositório no GitHub: 
 https://github.com/jeffreysSharp/fundamentos-arquitetura-software 
  
-Através desse projeto, iremos explorar os fundamentos da OOP na prática, garantindo um aprendizado mais dinâmico e aplicável ao mercado de trabalho. 
+Através desse projeto, iremos explorar os fundamentos da POO na prática, garantindo um aprendizado mais dinâmico e aplicável ao mercado de trabalho. 
 
 ## Estrutura do projeto
 Este projeto segue a estrutura apresentada na imagem abaixo, proporcionando uma organização clara e modular para facilitar o entendimento e a implementação dos conceitos abordados. 
@@ -77,7 +77,7 @@ Com este projeto base, você poderá acompanhar os módulos, experimentar os con
 Neste módulo, você aprenderá dois conceitos fundamentais da Programação Orientada a Objetos: Classes e Objetos.
 
 ## Definições de Classes
-A classe é um dos conceitos fundamentais da Programação Orientada a Objetos (OOP). Em C#, classes servem como modelos para criar objetos, encapsulando atributos (dados) e métodos (comportamentos).
+A classe é um dos conceitos fundamentais da Programação Orientada a Objetos (POO). Em C#, classes servem como modelos para criar objetos, encapsulando atributos (dados) e métodos (comportamentos).
 
 ## O Que é uma Classe?
 Uma classe é uma estrutura de código que define um conjunto de propriedades (atributos) e comportamentos (métodos) de um objeto. Ela funciona como um molde para a criação de instâncias (objetos) que compartilham as mesmas características e funcionalidades.
@@ -255,10 +255,10 @@ Agora você conhece tudo sobre Classes em C#!
 - Viu um exemplo prático com a classe House.
 - Aprendeu sobre modificadores de acesso, construtores e métodos.
 
-As classes são a base da Programação Orientada a Objetos (OOP), e entender seu funcionamento é essencial para construir sistemas organizados, escaláveis e eficientes!
+As classes são a base da Programação Orientada a Objetos (POO), e entender seu funcionamento é essencial para construir sistemas organizados, escaláveis e eficientes!
 
 ## Herança
-A herança é um dos princípios fundamentais da Programação Orientada a Objetos (OOP). Ela permite que uma classe (denominada classe derivada ou subclasse) herde atributos e comportamentos de outra classe (denominada classe base ou superclasse). No C#, a herança é usada para promover o reuso de código e criar hierarquias de classes mais organizadas. 
+A herança é um dos princípios fundamentais da Programação Orientada a Objetos (POO). Ela permite que uma classe (denominada classe derivada ou subclasse) herde atributos e comportamentos de outra classe (denominada classe base ou superclasse). No C#, a herança é usada para promover o reuso de código e criar hierarquias de classes mais organizadas. 
 
 Isso promove reutilização de código, facilita a manutenção e melhora a organização do sistema. 
 
@@ -398,14 +398,14 @@ public class Dog : Animal
 ⚠️ Pode ser ineficiente em certos cenários onde composição seria mais adequada.<br />
 
 ### Conclusão
-A herança é uma ferramenta poderosa na OOP, mas deve ser usada com moderação. Em cenários complexos, muitas vezes a composição é preferível. No DDD, a herança é utilizada para criar abstrações como entidades base e agregações.
+A herança é uma ferramenta poderosa na POO, mas deve ser usada com moderação. Em cenários complexos, muitas vezes a composição é preferível. No DDD, a herança é utilizada para criar abstrações como entidades base e agregações.
 
 ## Abstração 
-Neste módulo, abordaremos abstração, um dos pilares fundamentais da Programação Orientada a Objetos (OOP). A abstração está diretamente relacionada à herança, pois permite definir um conjunto de estado e comportamento que serve como base para diversas especializações. 
+Neste módulo, abordaremos abstração, um dos pilares fundamentais da Programação Orientada a Objetos (POO). A abstração está diretamente relacionada à herança, pois permite definir um conjunto de estado e comportamento que serve como base para diversas especializações. 
 
 ### Entendendo a Abstração 
 
-A ideia central da abstração na OOP é fornecer uma superclasse que possa ser reutilizada por várias classes especializadas. No exemplo abaixo, temos a classe HomeAppliance: 
+A ideia central da abstração na POO é fornecer uma superclasse que possa ser reutilizada por várias classes especializadas. No exemplo abaixo, temos a classe HomeAppliance: 
 
 ```
 
@@ -484,5 +484,5 @@ A abstração permite criar modelos genéricos que podem ser especializados por 
 <br/>
 <div style="display: flex; justify-content: space-between;">  
    <a href="../README.md">Voltar: O que é Arquitetura de Software</a><br />
-  <a href="OOP.md">Avançar: Programação Orientada a Objetos - OOP</a>
+  <a href="POO.md">Avançar: Programação Orientada a Objetos - POO</a>
 </div>
