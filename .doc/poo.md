@@ -635,6 +635,93 @@ O conceito de polimorfismo pode ser desafiador no início. Para dominá-lo:
 
 Quanto mais prática, maior será seu domínio sobre esse pilar fundamental da POO! 
 
+## Encapsulamento
+
+Neste módulo, abordaremos encapsulamento, um dos princípios fundamentais da Programação Orientada a Objetos (POO). O encapsulamento consiste em ocultar a implementação interna de uma classe, expondo apenas o necessário por meio de métodos públicos, enquanto mantém a lógica interna protegida com métodos privados. 
+
+**Exemplo de Encapsulamento**<br /> 
+```
+
+public class CoffeeAutomation
+{
+    public void ServingCoffee()
+    {
+        var coffeeMaker = new CoffeeMaker();
+        coffeeMaker.TurnOn();
+        coffeeMaker.PrepareCoffee();
+        coffeeMaker.TurnOff();
+    }
+}
+
+```
+
+No exemplo acima, a classe CoffeeAutomation contém o método público ServingCoffee(), que automatiza o processo de servir café. Esse método:
+
+- Cria uma instância de CoffeeMaker
+- Chama os métodos TurnOn(), PrepareCoffee() e TurnOff()
+- Encapsula o processo de preparar café, ocultando os detalhes internos
+
+Quem utiliza ServingCoffee() não precisa saber como o café é preparado internamente, apenas invoca o método para que a automação aconteça.
+
+**Encapsulamento dentro da Classe CoffeeMaker**<br />
+
+Dentro da classe CoffeeMaker, o método PrepareCoffee() também encapsula detalhes internos:
+
+```
+public void PrepareCoffee()
+{
+    Test();
+    HeatWater();
+    GrindingGrains();
+    FinalizingProcess();
+    TurnOff();
+}
+
+private void HeatWater() { /* Lógica de aquecimento da água */ }
+private void GrindingGrains() { /* Lógica de moagem dos grãos */ }
+
+```
+Os métodos HeatWater() e GrindingGrains() são privados, o que significa que:
+
+- Não podem ser chamados diretamente de fora da classe CoffeeMaker
+- São utilizados apenas dentro da própria classe
+- O encapsulamento evita que sejam chamados fora da ordem correta
+
+Isso impede, por exemplo, que HeatWater() seja chamado sem necessidade, o que poderia gerar um mau funcionamento na cafeteira. O mesmo vale para GrindingGrains(), que só deve ser acionado no momento adequado do processo.
+
+### O Conceito da "Caixa Preta"
+
+Encapsulamento pode ser entendido como um sistema de caixa preta: você interage com uma interface pública
+ (ServingCoffee()), mas não precisa saber como os métodos internos funcionam.
+
+**Isso traz benefícios importantes:** <br />
+
+- Segurança → Evita chamadas erradas que poderiam comprometer o sistema.
+- Facilidade de manutenção → A implementação pode ser alterada sem afetar quem usa a classe.
+- Melhor organização → Separação clara entre interface pública e lógica interna.
+
+### Encapsulamento e Modificadores de Acesso
+
+Os modificadores de acesso são essenciais para definir quais partes do código devem ser visíveis ou ocultas. Abaixo, uma tabela com os principais modificadores em C#:
+
+| Modificador                  | Acesso Permitido                                                              |
+|------------------------------|-------------------------------------------------------------------------------| 
+| public                       | Livre acesso de qualquer lugar                                                |
+| protected                    | Acesso apenas por subclasses                                                  |
+| internal                     | Acessível dentro do mesmo assembly                                            |
+| protected internal           | Acessível dentro do mesmo assembly ou por herança                             |
+| private                      | Acessível apenas dentro da mesma classe                                       |
+| private protected            | Acessível apenas por subclasses dentro do mesmo assembly                      |
+
+
+### Conclusão 
+
+Encapsulamento é um princípio fundamental que permite ocultar a implementação interna e expor apenas o necessário. Ele melhora a segurança, organização e facilita a manutenção do código. Sempre que for projetar uma classe, pense quais métodos devem ser expostos e quais devem ser mantidos privados para garantir um design mais seguro e eficiente. 
+
+🚀 Agora que você compreende encapsulamento, pratique criando cenários onde certos métodos devem ser privados e outros públicos! 
+
+
+
 
 <br/>
 <div style="display: flex; justify-content: space-between;">  
