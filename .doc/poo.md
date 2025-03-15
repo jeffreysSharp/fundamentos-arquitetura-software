@@ -73,10 +73,9 @@ Este projeto segue a estrutura apresentada na imagem abaixo, proporcionando uma 
 
 Com este projeto base, você poderá acompanhar os módulos, experimentar os conceitos na prática, realizar testes e explorar diferentes implementações.
 
-## Estado e comportamento
 Neste módulo, você aprenderá dois conceitos fundamentais da Programação Orientada a Objetos: Classes e Objetos.
 
-### Definições de Classes
+## Definições de Classes
 A classe é um dos conceitos fundamentais da Programação Orientada a Objetos (POO). Em C#, classes servem como modelos para criar objetos, encapsulando atributos (dados) e métodos (comportamentos).
 
 ### O Que é uma Classe?
