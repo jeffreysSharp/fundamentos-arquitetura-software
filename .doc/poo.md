@@ -474,10 +474,10 @@ Conclusão
 A abstração permite criar modelos genéricos que podem ser especializados por outras classes, tornando o código mais organizado, reutilizável e flexível. Se seu objetivo é criar uma arquitetura bem estruturada, a abstração, combinada com herança, polimorfismo e encapsulamento, é essencial para um código limpo e escalável.
 
 ### Resumo:
-✅ Superclasse abstrata define comportamento comum para várias classes.<br />
-✅ Métodos abstratos forçam a implementação específica em subclasses.<br />
-✅ Classes abstratas não podem ser instanciadas diretamente.<br />
-✅ Abstração é a base para polimorfismo e encapsulamento.<br />
+- Superclasse abstrata define comportamento comum para várias classes.
+- Métodos abstratos forçam a implementação específica em subclasses.
+- Classes abstratas não podem ser instanciadas diretamente.
+- Abstração é a base para polimorfismo e encapsulamento.
 
 ## Polimorfismo 
 Neste módulo, abordaremos polimorfismo, um dos pilares essenciais da Programação Orientada a Objetos (POO). O próprio termo "polimorfismo" vem do grego: 
