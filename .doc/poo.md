@@ -73,12 +73,10 @@ Este projeto segue a estrutura apresentada na imagem abaixo, proporcionando uma 
 
 Com este projeto base, você poderá acompanhar os módulos, experimentar os conceitos na prática, realizar testes e explorar diferentes implementações.
 
-Neste módulo, você aprenderá dois conceitos fundamentais da Programação Orientada a Objetos: Classes e Objetos.
-
-## Definições de Classes
+### Definições de Classes
 A classe é um dos conceitos fundamentais da Programação Orientada a Objetos (POO). Em C#, classes servem como modelos para criar objetos, encapsulando atributos (dados) e métodos (comportamentos).
 
-### O Que é uma Classe?
+### O que é uma Classe?
 Uma classe é uma estrutura de código que define um conjunto de propriedades (atributos) e comportamentos (métodos) de um objeto. Ela funciona como um molde para a criação de instâncias (objetos) que compartilham as mesmas características e funcionalidades.
 
 ### Estrutura Básica de uma Classe
@@ -725,6 +723,6 @@ Encapsulamento é um princípio fundamental que permite ocultar a implementaçã
 
 <br/>
 <div style="display: flex; justify-content: space-between;">  
-   <a href="../README.md">Voltar: O que é Arquitetura de Software</a><br />
-  <a href="POO.md">Avançar: Programação Orientada a Objetos - POO</a>
+   <a href="what-is-it.md">Voltar: O que é Arquitetura de Software</a><br />
+  <a href="solid.md">Avançar: Princípios SOLID</a>
 </div>

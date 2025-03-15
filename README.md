@@ -20,6 +20,10 @@ Todos os exemplos apresentados ao longo do curso foram desenvolvidos com **.NET 
 
 1. <a href=".doc/what-is-it.md">O que é Arquitetura de Software</a>
 2. <a href=".doc/poo.md">Pilares da Programação Orientada a Objetos (POO)</a>
+3. <a href=".doc/solid.md">Princípios SOLID</a>
+3. <a href=".doc/solid-srp.md">SRP - Single Responsability Principle</a>
+
+
 
 
 
