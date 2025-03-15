@@ -372,7 +372,7 @@ As classes abstratas são utilizadas quando queremos definir uma estrutura base 
 ```
 public abstract class Animal
 {
-    public abstract void MakeSound(); // Abstract method that must be implemented
+    public abstract void MakeSound(); // Método abstrato que deve ser implementado
 }
 
 public class Dog : Animal
@@ -478,6 +478,162 @@ A abstração permite criar modelos genéricos que podem ser especializados por 
 ✅ Métodos abstratos forçam a implementação específica em subclasses.<br />
 ✅ Classes abstratas não podem ser instanciadas diretamente.<br />
 ✅ Abstração é a base para polimorfismo e encapsulamento.<br />
+
+## Polimorfismo 
+Neste módulo, abordaremos polimorfismo, um dos pilares essenciais da Programação Orientada a Objetos (POO). O próprio termo "polimorfismo" vem do grego: 
+
+- "Poli" → pluralidade, múltiplos
+- "Morfismo" → formas ou comportamentos 
+
+Ou seja, polimorfismo significa que um mesmo conceito pode assumir diferentes comportamentos. Abaixo, temos um exemplo com a classe CoffeeMaker, que herda da classe HomeAppliance.<br /> 
+
+**Exemplo de polimorfismo** 
+```
+ public class CoffeeMaker : HomeAppliance
+ {
+     public CoffeeMaker(string name, int voltage)
+         : base(name, voltage) { }
+
+     public CoffeeMaker() 
+         : base("Cafeteira", 110) { }
+
+     public override void TurnOn() => Console.WriteLine($" {Name} está ligada, verificando recipiente de água...");        
+
+     public override void TurnOf() =>  Console.WriteLine($" {Name} está desligada, resfriando o aquecedor...");
+     
+     private static void HeatWater() => Console.WriteLine($" Aquecendo a água...");
+
+     private static void GrindingGrains() => Console.WriteLine($" Moendo os grãos...");
+     private static void FinalizingProcess() => Console.WriteLine($" O seu café está pronto!");
+
+     public void PrepareCoffee()
+     {
+         Test();
+         TurnOn();            
+         HeatWater();
+         GrindingGrains();
+         FinalizingProcess();
+         TurnOf();
+     }
+ }
+
+```
+
+**Polimorfismo no Construtor** <br />
+
+Quando herdamos de HomeAppliance, somos obrigados a fornecer nome e voltagem para a classe base, pois esses dados são exigidos pelo seu construtor. Podemos criar um construtor padrão que atribua valores automáticos, como "Forno" e voltagem 220V, ou permitir que o usuário informe os valores. Isso exemplifica polimorfismo no construtor, onde temos diferentes formas de instanciar o mesmo objeto. 
+
+**Encapsulamento e Orquestração de Processos**<br />
+
+Na CoffeeMaker, temos três métodos principais:<br /> 
+
+- HeatWater() → Aquece a água.
+- GrindingGrains() → Moagem dos grãos.
+- PrepareCoffee() → Orquestra os dois métodos anteriores. 
+
+Os dois primeiros são privados, pois fazem parte do funcionamento interno da CoffeeMaker. O método PrepareCoffee() orquestra o fluxo do processo. Essa abordagem exemplifica encapsulamento, garantindo que HeatWater() e GrindingGrains() sejam usados apenas dentro da classe CoffeeMaker. 
+
+**Override e Sobrescrita de Métodos**<br /> 
+
+Outro aspecto essencial do polimorfismo é o uso da palavra-chave override. Quando sobrescrevemos um método da classe base HomeAppliance, estamos redefinindo seu comportamento na classe derivada CoffeeMaker. 
+
+Isso é obrigatório para métodos abstratos. Se HomeAppliance definir: 
+
+```
+ public abstract void TurnOn(); 
+
+ public abstract void TurnOff(); 
+
+```
+
+Então todas as classes que herdarem dela devem sobrescrever esses métodos. Caso não o façam, o código nem compilará, garantindo que cada especialização tenha um comportamento adequado. 
+
+**Métodos Virtuais vs. Métodos Abstratos**<br />
+
+Agora, suponha que HomeAppliance tenha um método Test(), mas sem ser abstrato: 
+
+ ```
+ public void Test()
+ { 
+    Console.WriteLine("Testando equipamento..."); 
+ } 
+ ```
+ 
+**Nesse caso:**<br />  
+
+- Ele já possui uma implementação padrão. 
+- Todas as subclasses herdam esse método automaticamente. 
+- Ele não pode ser sobrescrito (não é permitido override).
+
+**Agora, se adicionarmos virtual:**<br /> 
+
+ ```
+ public virtual void Test()
+ { 
+    Console.WriteLine("Testando equipamento..."); 
+ } 
+ 
+ ```
+
+**A classe derivada pode sobrescrevê-lo, se desejar:**<br /> 
+
+```
+
+ public override void Test()
+ { 
+    Console.WriteLine("Testando a cafeteira antes do uso..."); 
+ } 
+
+
+```
+
+Isso mostra outro tipo de polimorfismo, onde o comportamento de um método pode ser herdado e modificado conforme necessário. 
+
+**Exemplo de Polimorfismo Aplicado**<br />
+
+Ao implementar TurnOn() e TurnOff(), cada classe pode ter um comportamento diferente: 
+
+ 
+```
+ public override void TurnOn()
+ { 
+    if (WaterTankIsEmpty()) 
+    { 
+        Console.WriteLine("Atenção: Reabasteça o reservatório de água!"); 
+    } 
+    else
+    { 
+        Console.WriteLine("Ligando a cafeteira..."); 
+    }
+ } 
+
+ public override void TurnOff()
+ { 
+    Console.WriteLine("Desligando a cafeteira e resfriando o aquecedor..."); 
+ } 
+
+```
+
+Dessa forma, HomeAppliance assume diferentes comportamentos dependendo de quem a está especializando, um dos principais conceitos do polimorfismo. 
+
+**Conclusão** <br /> 
+
+Polimorfismo permite que um mesmo método tenha diferentes comportamentos. 
+
+- Métodos abstratos obrigam a sobrescrita (override). 
+- Métodos virtuais podem ou não ser sobrescritos. 
+- Construtores podem ser polimórficos (permitindo diferentes formas de instanciar uma classe).
+- Encapsulamento e herança trabalham juntos no polimorfismo. 
+
+**Prática Recomendada:**<br /> 
+
+O conceito de polimorfismo pode ser desafiador no início. Para dominá-lo:  
+
+- Crie diferentes cenários de herança e sobrescrita. 
+- Experimente métodos abstratos e virtuais. 
+- Teste diferentes formas de instanciar objetos. 
+
+Quanto mais prática, maior será seu domínio sobre esse pilar fundamental da POO! 
 
 
 <br/>
