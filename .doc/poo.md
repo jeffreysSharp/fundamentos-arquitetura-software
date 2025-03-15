@@ -16,7 +16,7 @@ A POO é um paradigma essencial no desenvolvimento de software moderno. Ela perm
 - **Encapsulamento** (restringir o acesso direto aos dados internos de um objeto).
 
 ### A Importância da POO no Mercado
-- Dominar os princípios da Orientação a Objetos é essencial para:
+Dominar os princípios da Orientação a Objetos é essencial para:
 - Aplicar boas práticas de design de código e padrões arquiteturais.
 - Trabalhar com .NET, Java e outros frameworks populares.
 - Ter um diferencial competitivo no mercado de trabalho.
