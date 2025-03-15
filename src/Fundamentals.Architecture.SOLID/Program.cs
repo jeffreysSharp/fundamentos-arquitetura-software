@@ -1,0 +1,1 @@
+﻿Console.WriteLine("SRP - Single Responsability Priciple");
