@@ -31,12 +31,12 @@ Dois conceitos fundamentais na POO são baixo acoplamento e alta coesão. Muitas
 ### O Que é Acoplamento?
 O acoplamento refere-se ao grau de dependência entre objetos. Se um objeto depende diretamente de outro, qualquer alteração pode impactar ambos, gerando fragilidade no código.
 
-### Exemplo de alto acoplamento:**
+### Exemplo de alto acoplamento:
 Quando uma classe instancia diretamente outra classe dentro dela, ou quando a herança é mal utilizada, causando forte dependência entre os objetos.
 
 **Se um objeto muda, o outro também é impactado.**
 
-### O Que é Coesão?
+### O que é Coesão?
 A coesão representa o grau de responsabilidade única de um objeto. Um sistema com alta coesão possui módulos independentes, cada um executando uma única responsabilidade sem depender fortemente de outros.
 
 ### Exemplo de alta coesão:
@@ -51,7 +51,7 @@ Classes trabalhando lado a lado, cada uma cumprindo seu papel específico, sem d
 | Coesão       | Cada objeto executa uma única responsabilidade | Facilita a manutenção e reuso, tornando o código mais organizado. |
 
 ### Aplicando na Prática
-No desenvolvimento orientado a objetos, devemos sempre buscar baixo acoplamento e alta coesão. Isso melhora a manutenibilidade, reutilização e escalabilidade do código.
+No desenvolvimento Orientado a Objetos, devemos sempre buscar baixo acoplamento e alta coesão. Isso melhora a manutenibilidade, reutilização e escalabilidade do código.
 
 Agora que entendemos esses princípios fundamentais, vamos explorar em detalhes cada um dos pilares da POO! 
 
@@ -69,7 +69,7 @@ Através desse projeto, iremos explorar os fundamentos da POO na prática, garan
 ## Estrutura do projeto
 Este projeto segue a estrutura apresentada na imagem abaixo, proporcionando uma organização clara e modular para facilitar o entendimento e a implementação dos conceitos abordados. 
 
-![](.doc/img/1-estrutura-solucao.JPG)
+![](img/1-estrutura-solucao.JPG)
 
 Com este projeto base, você poderá acompanhar os módulos, experimentar os conceitos na prática, realizar testes e explorar diferentes implementações.
 
