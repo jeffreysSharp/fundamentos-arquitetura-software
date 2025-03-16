@@ -37,4 +37,5 @@ Este princípio é melhor compreendido por meio de exemplos de código. No nosso
 <br/>
 <div style="display: flex; justify-content: space-between;">  
    <a href="solid-srp.md">Voltar: SRP – Single Responsibility Principle</a><br />  
+   <a href="solid-lsp.md">Avançar: LSP – Liskov Substitution Principle</a>  
 </div>

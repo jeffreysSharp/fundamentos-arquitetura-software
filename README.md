@@ -23,6 +23,7 @@ Todos os exemplos apresentados ao longo do curso foram desenvolvidos com **.NET 
 3. <a href=".doc/solid.md">Princípios SOLID</a>
 5. <a href=".doc/solid-srp.md">SRP - Single Responsability Principle</a>
 6. <a href=".doc/solid-ocp.md">OCP - Open Closed Principle</a>
+7. <a href=".doc/solid-lsp.md">LSP - Liskov Substitution Principle</a>
 
 
 
