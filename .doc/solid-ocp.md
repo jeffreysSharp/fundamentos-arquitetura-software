@@ -5,8 +5,8 @@ Neste módulo, abordaremos o OCP (Open Closed Principle), que representa a letra
 > "Entidades de software (classes, módulos, funções, etc.) devem estar abertas para extensão, mas fechadas para modificação." 
 
 Esse princípio pode parecer controverso para algumas pessoas, pois muitos se perguntam: 
-- "Como assim fechada para modificação?
-- Quer dizer que eu não posso alterar minha classe?"
+- Como assim fechada para modificação?
+- Quer dizer que eu não posso alterar minha classe?
 
 De preferência, não. A ideia do OCP é que uma classe deve estar fechada para modificações diretas e aberta para ser estendida. Isso significa que, ao invés de modificar uma classe existente sempre que surgir um novo requisito, devemos criar extensões para adicionar novos comportamentos sem alterar o código original. 
 
