@@ -47,7 +47,7 @@ O Singleton cria uma única instância do objeto para toda a aplicação e a man
 - **Vantagem:** Evita a necessidade de recriação de objetos, economizando recursos.
 - **Desvantagem:** Pode gerar problemas de concorrência e segurança, especialmente se utilizado com o Entity Framework Core.
 
-- Risco do Singleton com EF Core
+**Risco do Singleton com EF Core** <br />
 Imagine um contexto do Entity Framework Core compartilhado entre todos os usuários da aplicação. Se múltiplos usuários estiverem editando, salvando ou excluindo dados simultaneamente, isso pode causar conflitos e expor falhas de segurança.
 
 **Como funciona?**  
