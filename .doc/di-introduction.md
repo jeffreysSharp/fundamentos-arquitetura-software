@@ -13,8 +13,7 @@ Iniciaremos com exemplos da vida real, demonstrando um caso clássico e essencia
 
 Após essa introdução, exploraremos os seguintes tópicos avançados:<br />
 
-### Ciclo de vida das dependências
-
+- Ciclo de vida das dependências
 - Uso de Generics com injeção de dependência
 - Injeção via FromServices
 - Service Locator
