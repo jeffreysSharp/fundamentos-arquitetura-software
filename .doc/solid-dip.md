@@ -32,4 +32,5 @@ Ao final, você compreenderá como a inversão de dependência melhora a flexibi
 <br/>
 <div style="display: flex; justify-content: space-between;">  
    <a href="solid-isp.md">Voltar: ISP – Interface Segregation Principle</a><br />  
+   <a href="di-introduction.md">Avançar: Dependency Injection</a>  
 </div>
