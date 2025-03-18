@@ -24,7 +24,9 @@ Todos os exemplos apresentados ao longo do curso foram desenvolvidos com **.NET 
 5. <a href=".doc/solid-srp.md">SRP - Single Responsability Principle</a>
 6. <a href=".doc/solid-ocp.md">OCP - Open Closed Principle</a>
 7. <a href=".doc/solid-lsp.md">LSP - Liskov Substitution Principle</a>
-7. <a href=".doc/solid-isp.md">ISP - Interface Segregation Principe</a>
+8. <a href=".doc/solid-isp.md">ISP - Interface Segregation Principe</a>
+9. <a href=".doc/solid-isp.md">ISP - Interface Segregation Principe</a>
+10. <a href=".doc/solid-dip.md">DIP - Dependency Inversion Principle</a>
 
 
 
