@@ -51,5 +51,5 @@ No nosso projeto, veremos:
 <br/>
 <div style="display: flex; justify-content: space-between;">  
    <a href="solid-ocp.md">Voltar: OCP – Open Closed Principle</a><br />  
-     <a href="solid-lsp.md">Voltar: OCP – Interface Segregation Principle</a><br />  
+     <a href="solid-lsp.md">Voltar: ISP – Interface Segregation Principle</a><br />  
 </div>
