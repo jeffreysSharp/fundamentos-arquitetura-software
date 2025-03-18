@@ -27,6 +27,7 @@ Todos os exemplos apresentados ao longo do curso foram desenvolvidos com **.NET 
 8. <a href=".doc/solid-isp.md">ISP - Interface Segregation Principe</a>
 9. <a href=".doc/solid-isp.md">ISP - Interface Segregation Principe</a>
 10. <a href=".doc/solid-dip.md">DIP - Dependency Inversion Principle</a>
+11. <a href=".doc/di-introduction.md">Dependency Injection</a>
 
 
 
