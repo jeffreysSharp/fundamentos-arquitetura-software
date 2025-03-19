@@ -26,4 +26,5 @@ Vamos mergulhar nesse tema essencial para aplicações modernas e escaláveis!
 <br/>
 <div style="display: flex; justify-content: space-between;">  
    <a href="solid-dip.md">Voltar: DIP - Dependency Inversion Principle</a><br />  
+   <a href="di-life-cycles.md">Avançar: Dependency Injection - Ciclos de Vida</a><br />  
 </div>
