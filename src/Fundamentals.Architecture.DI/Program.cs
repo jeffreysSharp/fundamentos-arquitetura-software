@@ -22,6 +22,10 @@ builder.Services.AddScoped<IClientService, ClientService>();
 
 #endregion
 
+#region Generics
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+#endregion
+
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())
