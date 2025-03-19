@@ -1,11 +1,19 @@
 using Fundamentals.Architecture.DI.Interfaces;
+using Fundamentals.Architecture.DI.Models;
 using Fundamentals.Architecture.DI.Repositories;
 using Fundamentals.Architecture.DI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 builder.Services.AddControllersWithViews();
+
+#region LifeCycle
+builder.Services.AddTransient<IOPerationTransient, Operation>();
+builder.Services.AddScoped<IOperationScoped, Operation>();
+builder.Services.AddSingleton<IOperationSingleton, Operation>();
+builder.Services.AddSingleton<IOPerationSingletonInstance>(new Operation(Guid.Empty));
+builder.Services.AddTransient<OperationService>();
+#endregion
 
 #region Real Life
 
@@ -16,14 +24,11 @@ builder.Services.AddScoped<IClientService, ClientService>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
-
 
 app.UseHttpsRedirection();
 app.UseRouting();
